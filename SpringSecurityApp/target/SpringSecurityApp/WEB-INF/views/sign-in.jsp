@@ -29,7 +29,15 @@
 
     <form method="POST" action="${contextPath}/login" class="form-signin">
         <h2 class="form-heading">Log in</h2>
+        <script language="JavaScript">
 
+            var h=(new Date()).getHours();
+            if (h > 22 || h <6) document.write('Доброй ночи') ;
+            if (h > 6 && h < 10) document.write('Доброе утро');
+            if (h > 10 && h < 18) document.write('Добрый день!');
+            if (h > 18 && h < 22) document. write('Добрый вечер');
+
+        </script>
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
             <input name="username" type="text" class="form-control" placeholder="Username"

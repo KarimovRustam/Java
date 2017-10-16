@@ -1,0 +1,46 @@
+2017-10-16 13:19:29.116  INFO 1096 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74235045: startup date [Mon Oct 16 13:19:29 GMT+03:00 2017]; root of context hierarchy
+2017-10-16 13:19:35.464  INFO 1096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-16 13:19:35.520  INFO 1096 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2017-10-16 13:19:35.524  INFO 1096 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 13:19:35.792  INFO 1096 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-10-16 13:19:35.793  INFO 1096 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6700 ms
+2017-10-16 13:19:36.381  INFO 1096 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 13:19:36.382  INFO 1096 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 13:19:36.383  INFO 1096 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 13:19:36.383  INFO 1096 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 13:19:36.387  INFO 1096 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-10-16 13:19:36.388  INFO 1096 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 13:19:38.922  INFO 1096 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-16 13:19:38.968  INFO 1096 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-16 13:19:39.885  INFO 1096 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-16 13:19:39.888  INFO 1096 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2017-10-16 13:19:39.900  INFO 1096 --- [main] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2017-10-16 13:19:40.347  INFO 1096 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-16 13:19:41.029  INFO 1096 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-10-16 13:19:46.192  INFO 1096 --- [main] o.h.t.PojoInstantiator                   : HHH000182: No default (no-argument) constructor for class: com.test.task.models.User (class must be instantiated by Interceptor)
+2017-10-16 13:19:46.539  INFO 1096 --- [main] o.h.t.h.SchemaExport                     : HHH000227: Running hbm2ddl schema export
+2017-10-16 13:19:46.552  INFO 1096 --- [main] o.h.t.h.SchemaExport                     : HHH000230: Schema export complete
+2017-10-16 13:19:46.632  INFO 1096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-16 13:19:49.010  INFO 1096 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@110e9982, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fe2965c, org.springframework.security.web.header.HeaderWriterFilter@35787726, org.springframework.security.web.authentication.logout.LogoutFilter@1c046c92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@446e7065, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40943a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40717ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eb0a686, org.springframework.security.web.session.SessionManagementFilter@27976390, org.springframework.security.web.access.ExceptionTranslationFilter@6637a365, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@237add]
+2017-10-16 13:19:49.662  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74235045: startup date [Mon Oct 16 13:19:29 GMT+03:00 2017]; root of context hierarchy
+2017-10-16 13:19:49.829  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sign-up],methods=[POST]}" onto public java.lang.String com.test.task.controllers.AuthController.register(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2017-10-16 13:19:49.830  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.test.task.controllers.AuthController.logout(javax.servlet.http.HttpServletRequest,org.springframework.security.core.Authentication)
+2017-10-16 13:19:49.831  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sign-in],methods=[GET]}" onto public java.lang.String com.test.task.controllers.AuthController.signIn(org.springframework.ui.Model,java.lang.String,java.lang.String,org.springframework.security.core.Authentication)
+2017-10-16 13:19:49.832  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sign-up],methods=[GET]}" onto public java.lang.String com.test.task.controllers.AuthController.signUp(org.springframework.security.core.Authentication)
+2017-10-16 13:19:49.834  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome],methods=[GET]}" onto public java.lang.String com.test.task.controllers.GreetingsController.welcome(org.springframework.ui.Model,org.springframework.security.core.Authentication)
+2017-10-16 13:19:49.834  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.task.controllers.GreetingsController.kek()
+2017-10-16 13:19:49.838  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 13:19:49.840  INFO 1096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:19:49.972  INFO 1096 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:19:49.973  INFO 1096 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:19:50.042  INFO 1096 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2017-10-16 13:19:50.092  INFO 1096 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:19:50.579  INFO 1096 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-10-16 13:19:50.924  INFO 1096 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-16 13:19:51.047  INFO 1096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-16 13:21:10.543  INFO 1096 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-16 13:21:10.543  INFO 1096 --- [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-16 13:21:10.609  INFO 1096 --- [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 65 ms
+2017-10-16 13:22:21.274  INFO 1096 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

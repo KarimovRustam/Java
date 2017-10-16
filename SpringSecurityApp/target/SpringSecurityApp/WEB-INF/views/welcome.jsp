@@ -20,6 +20,17 @@
 
 <div class="container">
 
+    <%--<script language="JavaScript">--%>
+
+        <%--var h=(new Date()).getHours();--%>
+        <%--if (h > 22 || h <6) document.write('Доброй ночи') ;--%>
+        <%--if (h > 6 && h < 10) document.write('Доброе утро');--%>
+        <%--if (h > 10 && h < 18) document.write('Добрый день!');--%>
+        <%--if (h > 18 && h < 22) document. write('Добрый вечер');--%>
+
+    <%--</script>--%>
+
+
     <c:if test="${pageContext.request.userPrincipal.name != null}">
         <form id="logoutForm" method="POST" action="${contextPath}/logout">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
